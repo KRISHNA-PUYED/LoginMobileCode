@@ -1,0 +1,315 @@
+<html>
+<head>
+<title>Code Pro</title>
+<link rel="stylesheet" href="./style.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+ 
+
+</head>
+<body>
+
+<div class="titlepage">
+<div class="datetime">
+     <a id="current_date" style='color:azure; font-size: 20px; font-family: "Lucida Handwriting";'></a>     
+      <a id="time" style='color:azure; font-size:20px;font-family: "Lucida Handwriting";'>Time</a>         
+</div>
+
+<div class="codename">
+<div class="name">
+<span>CODING PRO</span>
+</div>
+</div>
+
+
+<div class="empty">
+
+   </div>        
+   
+
+   <div class="option">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">OPTIONS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#" id="chTheme" onclick="changeTheme()">Switch Theme</a>
+        <a id="btn1">HTML</a>  
+          <a id="btn3">CSS</a>
+           <a id="btn4">JAVASCRIPT</a>
+              <a id="btn2">C_Online_Compiler</a>
+             <a id="btn5">CPP_Online_Compiler</a>
+              <a id="btn6">JAVA_Online_Compiler</a> 
+               <a id="btn1quiz">HTML_Quiz_App</a> 
+      </div>
+      </div> 
+   </div>  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<span class="ariahidden"></span>  
+
+     <div class="heading1">
+<div class="first">
+
+  <spna  onclick="toggle(this,0)"> 
+       <a class="htmlNavLink" style="font-size:25px;">HTML</a>
+      </spna>
+  </div>
+   <!--<div class="navitem active" onclick="toggle(this,0)">
+    <p class="htmlNavLink" style="font-size:25px;">HTML</p>
+    
+  </div>--> 
+
+
+<div class="second">
+  
+  <spna onclick="toggle(this,1)"> 
+     <a class="cssNavLink" style="font-size:25px;">CSS</a>
+    </spna>
+   <!--  <div class="navitem" onclick="toggle(this,1)">
+      <p class="cssNavLink" style="font-size:25px;">CSS</p>
+    </div>--> 
+ 
+
+</div>
+<div class="third">
+ 
+    <spna onclick="toggle(this,2)">
+      <a class="jsNavLink" style="font-size:25px;">JAVASCRIPT</a>
+    </spna>
+  <!--  <div class="navitem" onclick="toggle(this,2)">
+      <p class="jsNavLink" style="font-size:25px;">JAVASCRIPT</p>
+    </div>-->
+
+ 
+</div>
+    </div>
+
+
+      <div class="flex-item-2 bigscreen">
+        <div id="htmlEditor" class="editor fi-2-column-1 con">
+          
+</div>
+
+        <div id="cssEditor" class="editor fi-2-column-2 con">
+</div>
+        <div id="jsEditor" class="editor fi-2-column-3 con">
+</div>
+
+</div>
+
+
+
+
+<div class="file">
+  <input id="filename1" placeholder="HTML Filename..."/>
+  <button id="download1">Download file</button>
+  <input id="filename1" placeholder="CSS Filename..." />
+  <button id="download1">Download file</button>
+  <input id="filename1" placeholder="JAVASCRIPT Filename..." />
+  <button id="download1">Download file</button>
+  </div>
+<div class="out">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" id="C_Pro">C_Programs</a>
+  <a href="#" id="btn8">CPP_Programs</a>
+  <a href="#" id="btnj9">Java_Programs</a>
+  <a href="#" id="btnsql1">DBMS_Programs</a>
+  <a href="#" id="btnsql2">RDBMS_Programs</a>
+  <a href="#" id="btnand1">Android_Programs</a>
+  <a href="#" id="btnwp1">WP_Programs</a>
+  <a href="#" id="btnpy1">Python_Programs</a>
+  <a id="btn9">HTML_Programs</a><br>
+  
+
+ 
+
+
+
+
+
+    
+  
+</div>
+  <!-- Use any element to open the sidenav -->
+ 
+  <span onclick="openNav()"><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width="40px" style="padding-top: 5px; padding-left: 10px;"></span>
+ 
+   
+
+
+  <ul class="multilevel-dropdown-menu">
+    <li class="parent"><a href="#">Video Lectures &#9656;</a> 
+        <ul class="child">
+            <li class="parent"><a href="#">C_Lang <span class="expand">»</span></a>
+                <ul class="child">
+                    <li><a href="#" id="btn11c">1</a></li>
+                    <li><a href="#" id="btn12c">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </li>
+            <li class="parent"><a href="#">CPP_Lang <span class="expand">»</span></a>
+              <ul class="child">
+                  <li><a href="#" id="btn13cpp">Lession_1_CPP</a></li>
+                  <li><a href="#">Lession_2</a></li>
+                  <li><a href="#">Lession_3</a></li>
+              </ul>
+          </li>
+          <li class="parent"><a href="#">Java_Lang <span class="expand">»</span></a>
+            <ul class="child">
+                <li><a href="#" id="btn11">Lession_1</a></li>
+                <li><a href="#">Lession_2</a></li>
+                <li><a href="#">Lession_3</a></li>
+            </ul>
+        </li>
+        <li class="parent"><a href="#">Html <span class="expand">»</span></a>
+          <ul class="child">
+              <li><a href="#" id="btn11">Lession_1</a></li>
+              <li><a href="#">Lession_2</a></li>
+              <li><a href="#">Lession_3</a></li>
+          </ul>
+      </li>
+      <li class="parent"><a href="#">Css<span class="expand">»</span></a>
+        <ul class="child">
+            <li><a href="#" id="btn11">Lession_1</a></li>
+            <li><a href="#">Lession_2</a></li>
+            <li><a href="#">Lession_3</a></li>
+        </ul>
+    </li>
+    <li class="parent"><a href="#">JavaScript<span class="expand">»</span></a>
+      <ul class="child">
+          <li><a href="#" id="btn11">Lession_1</a></li>
+          <li><a href="#">Lession_2</a></li>
+          <li><a href="#">Lession_3</a></li>
+      </ul>
+  </li>
+        </ul>
+    </li>
+  </ul>
+
+
+
+
+
+<div class="outdata">
+<p>OUTPUT</p>
+</div>
+  
+
+<div class="notes">
+<ul class="multilevel-dropdown-menu1">
+  <li class="parent1"><a href="#">Notes &#9656;</a> 
+      <ul class="child1">
+          <li class="parent1"><a href="#" id="btnhn1">HTML_CSS_NOTES</a>
+             
+          </li>
+          
+        <li class="parent1"><a href="#" id="btnjn1">JS_NOTES</a>
+          
+      </li>
+      <li class="parent1"><a href="#" id="btncn1">C_NOTES</a>
+      
+    </li>
+    <li class="parent1"><a href="#" id="btncppn1">C++_NOTES</a>
+     
+  </li>
+  <li class="parent1"><a href="#">JAVA_NOTES</a>
+    
+</li>
+
+<li class="parent1"><a href="#">Python_NOTES</a>
+    
+</li>
+      </ul>
+  </li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <iframe id="ifrResult" class="output">
+     
+
+    </iframe>
+
+
+           
+
+<footer>
+    <h1><a href="#" class="fa fa-laptop">MGM'S COLLEGE CS & IT NANDED  <a href="#" class="fa fa-laptop"></a></h1>
+    <div class="logo">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+     
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript" src="./ace/ace.js"></script>
+	<script type="text/javascript" src="./ace/mode-css.js"></script>
+	<script type="text/javascript" src="./ace/mode-javascript.js"></script>
+	<script type="text/javascript" src="./ace/mode-html.js"></script>
+	<script type="text/javascript" src="./ace/worker-css.js"></script>
+	<script type="text/javascript" src="./ace/worker-javascript.js"></script>
+	<script type="text/javascript" src="./ace/worker-html.js"></script>
+	<script type="text/javascript" src="./ace/theme-crimson_editor.js"></script>
+	<script type="text/javascript" src="./ace/theme-monokai.js"></script>
+</body>
+</html>
